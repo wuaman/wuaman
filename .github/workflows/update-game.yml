@@ -1,4 +1,4 @@
-name: Update Space Shooter Game
+name: GitHub Space Shooter
 
 on:
   schedule:
@@ -12,9 +12,9 @@ jobs:
   update-game:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: czl9707/gh-space-shooter@v1.0.4
 
-      - uses: czl9707/gh-space-shooter@v1
+      - uses: czl9707/gh-space-shooter@v1.0.4
         with:
           github-token: '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'
           output-path: 'game.gif'
